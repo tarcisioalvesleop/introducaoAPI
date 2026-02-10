@@ -1,0 +1,32 @@
+# 1. Dependências (nunca suba a node_modules, ela é recriada com npm install)
+node_modules/
+
+# 2. Segurança: Variáveis de Ambiente (CRÍTICO)
+# Onde ficam sua MONGODB_URI, senhas e chaves de API
+.env
+.env.local
+.env.test
+.env.production
+.env.sample     # Exceção: suba um arquivo .env.example (vazio) para orientação
+
+# 3. Logs e Diagnósticos
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 4. Banco de Dados Local
+# Se você baixar o MongoDB e rodar localmente salvando dados no projeto
+data/
+db/
+
+# 5. Build e Saída (se usar TypeScript ou transpiladores)
+dist/
+build/
+
+# 6. IDEs e SO (Evita "lixo" de sistema no repositório)
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
